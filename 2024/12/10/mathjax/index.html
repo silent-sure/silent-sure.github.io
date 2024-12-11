@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。 定理 10 对 \([a,b]\) 上的函数 \(f\)，\(f\) 在 \([a,b]\) 上是达布可积的的充要条件是对任意 \(\epsilon&gt;0\)，存在实数 \(I\) 与 \([a,b]\)">
+<meta name="description" content="建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。定理 10 对 $[a,b]$ 上的函数 $f$，$f$ 在 $[a,b]$ 上是达布可积的的充要条件是对任意 $\epsilon&gt;0$，存在实数 $I$ 与 $[a,b]$ 的一个划分 $\mathcal P_0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试 MathJax 渲染">
 <meta property="og:url" content="http://example.com/2024/12/10/mathjax/index.html">
 <meta property="og:site_name" content="Silent-Sure">
-<meta property="og:description" content="建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。 定理 10 对 \([a,b]\) 上的函数 \(f\)，\(f\) 在 \([a,b]\) 上是达布可积的的充要条件是对任意 \(\epsilon&gt;0\)，存在实数 \(I\) 与 \([a,b]\)">
+<meta property="og:description" content="建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。定理 10 对 $[a,b]$ 上的函数 $f$，$f$ 在 $[a,b]$ 上是达布可积的的充要条件是对任意 $\epsilon&gt;0$，存在实数 $I$ 与 $[a,b]$ 的一个划分 $\mathcal P_0">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-12-10T15:39:36.000Z">
 <meta property="article:modified_time" content="2024-12-10T15:40:48.377Z">
@@ -323,80 +323,7 @@
       
 
       
-        <h2
-id="建站第一天用-next-的-math-字段配合-pandoc-与-hexo-renderer-pandoc-配置了-mathjax-数学公式这里测试一下-mathjax-渲染">建站第一天，用
-NexT 的 <code>math</code> 字段配合 pandoc 与 hexo-renderer-pandoc 配置了
-MathJax 数学公式。这里测试一下 MathJax 渲染。</h2>
-<p><strong>定理 10</strong> 对 <span
-class="math inline">\([a,b]\)</span> 上的函数 <span
-class="math inline">\(f\)</span>，<span class="math inline">\(f\)</span>
-在 <span class="math inline">\([a,b]\)</span>
-上是达布可积的的充要条件是对任意 <span
-class="math inline">\(\epsilon&gt;0\)</span>，存在实数 <span
-class="math inline">\(I\)</span> 与 <span
-class="math inline">\([a,b]\)</span> 的一个划分 <span
-class="math inline">\(\mathcal P_0\)</span>，使得对 <span
-class="math inline">\(\mathcal P_0\)</span> 的任意超划分 <span
-class="math inline">\(\mathcal P\)</span> 与 <span
-class="math inline">\(\mathcal P\)</span> 的任意一组标签 <span
-class="math inline">\(\tau\)</span>，都有 <span
-class="math inline">\(|R(f,\mathcal P,\tau)-I|&lt;\epsilon\)</span>。
-<strong>证</strong> 必要性： 假设 <span class="math inline">\(f\)</span>
-在 <span class="math inline">\([a,b]\)</span> 上是达布可积的，则存在
-<span class="math inline">\([a,b]\)</span> 的一个划分 <span
-class="math inline">\(P_0\)</span>，使得 <span
-class="math inline">\(U(f,\mathcal P_0)-L(f,\mathcal
-P_0)&lt;\epsilon\)</span>。设 <span class="math inline">\(\mathcal
-P\)</span> 是 <span class="math inline">\(\mathcal P_0\)</span>
-的任一超划分，则 <span class="math inline">\(U(f,\mathcal P)\le
-U(f,\mathcal P_0),\)</span><span class="math inline">\(L(f,\mathcal
-P)\ge L(f,\mathcal P_0)\)</span>，故 <span
-class="math inline">\(U(f,\mathcal P)-L(f,\mathcal P)\le U(f,\mathcal
-P_0)-L(f,\mathcal P_0)&lt;\epsilon\)</span>。由于 <span
-class="math inline">\(f\)</span> 在 <span
-class="math inline">\([a,b]\)</span> 上是达布可积的，<span
-class="math display">\[L(f,\mathcal P)\le\int_a^b f\le U(f,\mathcal
-P)\]</span>设 <span class="math inline">\(\tau\)</span> 为 <span
-class="math inline">\(\mathcal P\)</span> 的任意一组标签，则 <span
-class="math display">\[L(f,\mathcal P)\le R(f,\mathcal P,\tau)\le
-U(f,\mathcal P)\]</span>因此 <span class="math inline">\(\int_a^b
-f\)</span> 与 <span class="math inline">\(R(f,\mathcal P,\tau)\)</span>
-均不小于 <span class="math inline">\(L(f,\mathcal P)\)</span> 且不大于
-<span class="math inline">\(U(f,\mathcal P)\)</span>，故 <span
-class="math inline">\(|R(f,\mathcal P,\tau)-\int_a^b f|\le U(f,\mathcal
-P)-L(f,\mathcal P)&lt;\epsilon\)</span>。取 <span
-class="math inline">\(I=\int_a^b f\)</span> 即可。 充分性： 假设任取
-<span class="math inline">\(\epsilon&gt;0\)</span>、<span
-class="math inline">\([a,b]\)</span> 上的划分 <span
-class="math inline">\(\mathcal P_0\)</span>（与 <span
-class="math inline">\(\epsilon\)</span> 有关）的超划分 <span
-class="math inline">\(\mathcal P\)</span> 与 <span
-class="math inline">\(\mathcal P\)</span> 的标签 <span
-class="math inline">\(\tau\)</span>，都有 <span
-class="math inline">\(|R(f,\mathcal P,\tau)-I|&lt;\epsilon\)</span>。由
-<span class="math inline">\(\tau\)</span> 取遍 <span
-class="math inline">\(\mathcal P\)</span> 的各组标签时 <span
-class="math inline">\(R(f,\mathcal P,\tau)\)</span> 下确界为 <span
-class="math inline">\(L(f,\mathcal P)\)</span>、上确界为 <span
-class="math inline">\(U(f,\mathcal P)\)</span>，可知任取 <span
-class="math inline">\(\epsilon&gt;0\)</span> 与 <span
-class="math inline">\(\mathcal P_0\)</span> 的超划分 <span
-class="math inline">\(\mathcal P\)</span>，都有 <span
-class="math inline">\(U(f,\mathcal P)-L(f,\mathcal
-P)\le2\epsilon\)</span>。这等价于，任取 <span
-class="math inline">\(\epsilon&gt;0\)</span> 与 <span
-class="math inline">\(\mathcal P_0\)</span> 的超划分 <span
-class="math inline">\(\mathcal P\)</span>，都有 <span
-class="math inline">\(U(f,\mathcal P)-L(f,\mathcal
-P)&lt;\epsilon\)</span>。显然 <span class="math inline">\(\mathcal
-P\)</span> 存在，故 <span class="math inline">\(f\)</span> 在 <span
-class="math inline">\([a,b]\)</span> 上是达布可积的。<span
-class="math inline">\(\,\,\,\square\)</span> <strong>注</strong> 定理 10
-给出了达布可积性的一种全新的判定，使我们离给出与达布积分等价却截然不同的另一种积分定义——黎曼积分——更近一步。我们还需要做两件事：一是证明定理
-10 给出的判定条件中的 <span class="math inline">\(I\)</span> 可以与
-<span class="math inline">\(\epsilon\)</span> 无关，二是将定理 10
-中的不等式的成立范围由“与 <span class="math inline">\(\epsilon\)</span>
-有关的某个特定的划分的任意超划分”扩大到“任何足够密集的划分”。</p>
+        <h2 id="建站第一天，用-NexT-的-math-字段配合-pandoc-与-hexo-renderer-pandoc-配置了-MathJax-数学公式。这里测试一下-MathJax-渲染。"><a href="#建站第一天，用-NexT-的-math-字段配合-pandoc-与-hexo-renderer-pandoc-配置了-MathJax-数学公式。这里测试一下-MathJax-渲染。" class="headerlink" title="建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。"></a>建站第一天，用 NexT 的 <code>math</code> 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。</h2><p><strong>定理 10</strong> 对 $[a,b]$ 上的函数 $f$，$f$ 在 $[a,b]$ 上是达布可积的的充要条件是对任意 $\epsilon&gt;0$，存在实数 $I$ 与 $[a,b]$ 的一个划分 $\mathcal P_0$，使得对 $\mathcal P_0$ 的任意超划分 $\mathcal P$ 与 $\mathcal P$ 的任意一组标签 $\tau$，都有 $|R(f,\mathcal P,\tau)-I|&lt;\epsilon$。<br><strong>证</strong><br>必要性：<br>假设 $f$ 在 $[a,b]$ 上是达布可积的，则存在 $[a,b]$ 的一个划分 $P_0$，使得 $U(f,\mathcal P_0)-L(f,\mathcal P_0)&lt;\epsilon$。设 $\mathcal P$ 是 $\mathcal P_0$ 的任一超划分，则 $U(f,\mathcal P)\le U(f,\mathcal P_0),<script type="math/tex">L(f,\mathcal P)\ge L(f,\mathcal P_0)$，故 $U(f,\mathcal P)-L(f,\mathcal P)\le U(f,\mathcal P_0)-L(f,\mathcal P_0)<\epsilon$。由于 $f$ 在 $[a,b]$ 上是达布可积的，</script>L(f,\mathcal P)\le\int_a^b f\le U(f,\mathcal P)<script type="math/tex">设 $\tau$ 为 $\mathcal P$ 的任意一组标签，则</script>L(f,\mathcal P)\le R(f,\mathcal P,\tau)\le U(f,\mathcal P)$$因此 $\int_a^b f$ 与 $R(f,\mathcal P,\tau)$ 均不小于 $L(f,\mathcal P)$ 且不大于 $U(f,\mathcal P)$，故 $|R(f,\mathcal P,\tau)-\int_a^b f|\le U(f,\mathcal P)-L(f,\mathcal P)&lt;\epsilon$。取 $I=\int_a^b f$ 即可。<br>充分性：<br>假设任取 $\epsilon&gt;0$、$[a,b]$ 上的划分 $\mathcal P_0$（与 $\epsilon$ 有关）的超划分 $\mathcal P$ 与 $\mathcal P$ 的标签 $\tau$，都有 $|R(f,\mathcal P,\tau)-I|&lt;\epsilon$。由 $\tau$ 取遍 $\mathcal P$ 的各组标签时 $R(f,\mathcal P,\tau)$ 下确界为 $L(f,\mathcal P)$、上确界为 $U(f,\mathcal P)$，可知任取 $\epsilon&gt;0$ 与 $\mathcal P_0$ 的超划分 $\mathcal P$，都有 $U(f,\mathcal P)-L(f,\mathcal P)\le2\epsilon$。这等价于，任取 $\epsilon&gt;0$ 与 $\mathcal P_0$ 的超划分 $\mathcal P$，都有 $U(f,\mathcal P)-L(f,\mathcal P)&lt;\epsilon$。显然 $\mathcal P$ 存在，故 $f$ 在 $[a,b]$ 上是达布可积的。$\,\,\,\square$<br><strong>注</strong> 定理 10 给出了达布可积性的一种全新的判定，使我们离给出与达布积分等价却截然不同的另一种积分定义——黎曼积分——更近一步。我们还需要做两件事：一是证明定理 10 给出的判定条件中的 $I$ 可以与 $\epsilon$ 无关，二是将定理 10 中的不等式的成立范围由“与 $\epsilon$ 有关的某个特定的划分的任意超划分”扩大到“任何足够密集的划分”。</p>
 
       
     </div>
@@ -547,9 +474,7 @@ class="math inline">\(\,\,\,\square\)</span> <strong>注</strong> 定理 10
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%94%A8-next-%E7%9A%84-math-%E5%AD%97%E6%AE%B5%E9%85%8D%E5%90%88-pandoc-%E4%B8%8E-hexo-renderer-pandoc-%E9%85%8D%E7%BD%AE%E4%BA%86-mathjax-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%BF%99%E9%87%8C%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B-mathjax-%E6%B8%B2%E6%9F%93"><span class="nav-number">1.</span> <span class="nav-text">建站第一天，用
-NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了
-MathJax 数学公式。这里测试一下 MathJax 渲染。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E7%AB%99%E7%AC%AC%E4%B8%80%E5%A4%A9%EF%BC%8C%E7%94%A8-NexT-%E7%9A%84-math-%E5%AD%97%E6%AE%B5%E9%85%8D%E5%90%88-pandoc-%E4%B8%8E-hexo-renderer-pandoc-%E9%85%8D%E7%BD%AE%E4%BA%86-MathJax-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E3%80%82%E8%BF%99%E9%87%8C%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B-MathJax-%E6%B8%B2%E6%9F%93%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">建站第一天，用 NexT 的 math 字段配合 pandoc 与 hexo-renderer-pandoc 配置了 MathJax 数学公式。这里测试一下 MathJax 渲染。</span></a></li></ol></div>
             
 
           </div>
