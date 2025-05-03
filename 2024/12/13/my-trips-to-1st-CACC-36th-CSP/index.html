@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="11.30XCPC 队（不说“ACM 队”了，严谨一点）本来要训练的，突然因为停电取消了。正好，到图书馆复习去，CCF 算法能力大赛（CACC）明天就比赛了。 发现模板缺了一页，赶快打印。工程题有一道样题要用 A* 算法，于是迅速学了一下，写了道模板题，也把代码打印了出来。 考点在厦门理工学院，离这里三十几公里。规划了一下交通方式，大概是在先坐公交车去翔安的中心，再从那里打车去考点。经过一番计算，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="首届 CACC、第 36 次 CSP 认证游记">
+<meta property="og:url" content="http://example.com/2024/12/13/my-trips-to-1st-CACC-36th-CSP/index.html">
+<meta property="og:site_name" content="Silent-Sure">
+<meta property="og:description" content="11.30XCPC 队（不说“ACM 队”了，严谨一点）本来要训练的，突然因为停电取消了。正好，到图书馆复习去，CCF 算法能力大赛（CACC）明天就比赛了。 发现模板缺了一页，赶快打印。工程题有一道样题要用 A* 算法，于是迅速学了一下，写了道模板题，也把代码打印了出来。 考点在厦门理工学院，离这里三十几公里。规划了一下交通方式，大概是在先坐公交车去翔安的中心，再从那里打车去考点。经过一番计算，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-12-13T09:52:19.000Z">
+<meta property="article:modified_time" content="2025-05-03T04:38:18.576Z">
+<meta property="article:author" content="silent-sure">
+<meta property="article:tag" content="游记">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2024/12/13/my-trips-to-1st-CACC-36th-CSP/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>首届 CACC、第 36 次 CSP 认证游记 | Silent-Sure</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Silent-Sure</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/13/my-trips-to-1st-CACC-36th-CSP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="silent-sure">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Silent-Sure">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          首届 CACC、第 36 次 CSP 认证游记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-12-13 17:52:19" itemprop="dateCreated datePublished" datetime="2024-12-13T17:52:19+08:00">2024-12-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-05-03 12:38:18" itemprop="dateModified" datetime="2025-05-03T12:38:18+08:00">2025-05-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="11-30"><a href="#11-30" class="headerlink" title="11.30"></a>11.30</h3><p>XCPC 队（不说“ACM 队”了，严谨一点）本来要训练的，突然因为停电取消了。正好，到图书馆复习去，CCF 算法能力大赛（CACC）明天就比赛了。</p>
+<p>发现模板缺了一页，赶快打印。工程题有一道样题要用 A* 算法，于是迅速学了一下，写了道模板题，也把代码打印了出来。</p>
+<p>考点在厦门理工学院，离这里三十几公里。规划了一下交通方式，大概是在先坐公交车去翔安的中心，再从那里打车去考点。经过一番计算，我把闹钟设在 06:40。把考试要用的东西都准备好了，也买好了早餐。给手机充满了电，不然回不来了就尴尬了。</p>
+<h3 id="12-01-CACC"><a href="#12-01-CACC" class="headerlink" title="12.01 | CACC"></a>12.01 | CACC</h3><p>06:45 起床。带着书包和早餐下楼，在那个“一站式”房间吃早餐。想来这已经是我第二次做这种操作了，第一次是在考数学竞赛的时候。</p>
+<p>骑车去南门坐公交车。好冷啊！</p>
+<p>到南门正好看见我要坐的那辆公交车正在驶来，赶快往车站跑，然后坐上了。这时还没到 07:20。</p>
+<p>07:55 在汇景广场站下车。然后打车。由于刚才运气好恰好坐上了公交车，现在的时间还很充裕。</p>
+<p>08:25 打到车，直奔厦门理工学院。听司机说厦门理工学院的思明校区已经没有了，现在只有集美校区。司机说不要说南门，要说是正门还是侧门，因为他“在厦门二十多年就没认清过东西南北”。我说我以前在广州也是这样。</p>
+<p>到厦门理工学院的时候还没到 08:50。20 公里出头，车费 63.5 元。</p>
+<p>凭身份证和准考证进去了。——怎么现在大学校园都不开放了？——找到那栋楼，发现除了入口处的一张小小的 A4 纸之外没有任何标识，直到上了考场所在的二楼，才有这里正在办比赛的迹象。把文具、模板、水和几根香肠带了进去。</p>
+<p>09:30 开赛。怎么题目点不进去呢？原来连续多点几次就可以了。赛氪 OJ 的提交界面默认选 C 语言，而且每次刷新都会恢复，要时刻注意语言有没有选错。</p>
+<p>第一题是约瑟夫问题，一开始想写暴力，写到一半发现时间复杂度不对，改成了用 <code>std::set</code> 维护当前剩下的人，顺利地过了。第二题要我们求一个数组中间挖掉连续的 $k$ 个数之后最大值与最小值之差的最大值（还是最小值？我忘了），用前缀 max&#x2F;min，后缀 max&#x2F;min 搞一搞就好了。拿到 200 分的时候大概是 10:25。</p>
+<p>剩下两道常规算法题和一道工程题。工程题一题 200 分，但是我从来没做过，连这次考试之前也没做，因为在忙着别的事。看第三题。这是一道数据结构题，修改是给一个区间内的奇数或偶数加上一个数，查询的是一个区间内所有数的和。70 分只需要 $\Theta(qn)$ 暴力做就好了。然后看了看第四题，什么一组扑克牌组了顺子、三张和对子之后剩下的单张数量是多少，感觉除了第一档部分分（$n&#x3D;13$，即正常的扑克牌）之外都是不可做题（最大一组数据的 $n$ 是好像是几万）。想第三题的数据结构。</p>
+<p>我似乎想到了一个线段树做法，也就是每个节点记录区间内的数的和，奇数个数，以及两个懒标记（这个区间的和总共需要加多少，以及是否经历”奇数+奇数“操作使整个区间变成奇数或者偶数）。于是我开始写，写到一半发现假了，因为懒标记传不下去。如果懒标记分别记录这个区间经历的“奇数加一个数”操作和“偶数加一个数”操作之和呢？等等，这个操作有后效性，好像是没办法随便求和的，然后下传的时候还要和下面的小区间的懒标记叠加，好复杂啊。</p>
+<p>于是我决定放弃线段树，改成分块，心想 $n&#x3D;5\times 10^5$，$\Theta(n\sqrt n)$ 做法应该能卡进 3 s 吧。分块的结构比线段树简单，方便我想问题。到 12:00 左右，我开始有一些思路了。这时候午餐发了下来，是麦当劳，我都没敢吃，怕一吃东西我的思路就断了。过了十来分钟，我才开始吃麦当劳，是一个汉堡和一个奇怪的点心。吃饭用了 12 分钟。我确认了我的思路：对一个块，自上次块内操作以来，操作都是以整块形式进行的，用标记记录进行了什么操作，等到需要再次进行块内操作的时候，先按照标记的操作更新块内的数值。</p>
+<p>写完的这份代码和暴力对拍对上了，遂提交，结果发现 0 分。继续对拍，没发现会出问题的数据。奇了！这是什么错误，怎么拍不出来啊。（顺便吐槽一下，机子好慢。）这时候我又看了两眼草稿纸，突然发现问题：刚才线段树写不下去，不是因为这个操作没办法随便求和吗？那我现在怎么还在直接把奇数的操作加起来？我还在草稿纸上写“两次块内操作之间块内的数奇偶性不变”，它明明会变啊，在奇数被加上奇数的时候，整个块就变成偶数了。——等等！我明白了。“奇数+奇数”是一个临界点，一旦出现这个操作，后面的就都是对所有数的操作了，很好处理，搞一个标记专门记录后面这些操作就行；而在出现这个操作之前，块内的数的奇偶性不变，按照原来的方法直接加就好。改了一下再交，果然过了，最慢的点跑了 1.8 s 左右，那还挺快的嘛。</p>
+<p>（其实这个做法离线段树做法只有一步之遥——只需要搞清楚一个节点的懒标记怎么叠加从上面传下来的懒标记就好。不过我是考完试才意识到这一点的。）</p>
+<p>这时是 14:20。先看工程题吧，暴力留到后面写。工程题要求你实现尽可能好的在物理主机上开虚拟机的算法，每个主机和虚拟机都有两个参数 $c$（CPU）和 $m$（内存），其中主机的 $c$ 和 $m$ 为定值，只有 CPU 够、内存够的时候开虚拟机的操作才能成功，评分方式是比较基线算法要用到的主机数量和我的算法要用到的主机数量。我想到的做法是给主机搞一个“够用的可能性”函数，我设置的是 $f(i)&#x3D;c_im_i$，其中 $c_i$ 和 $m_i$ 分别为 $i$ 号主机剩余的 CPU 和内存。但是题目还要求实现删除虚拟机的操作，也就是 $c$ 和 $m$ 都会加回来。这种 STL 满天飞的代码我写起来很吃力。我一开始写的是 <code>priority_queue</code>，没错，删除的时候堆里的直接不删了。更有甚者，我的 <code>priority_queue</code> 的比较函数直接访问外面的数组，而外面的数组是会变动的，UB 是必然的，但我不想管这些了，我对工程题的预期是能拿到分就不错了。</p>
+<p>事情还没完，那个 <code>priority_queue</code> 访问了外部数组（其实是 <code>std::vector</code>），也就是要我们写的那个类的成员，结果编译器说不是 static 的不能访问。改成 static 的，它又报一堆神秘错误（说 MinGW 里面哪个文件出问题了那种）。就这么反反复复改了好多次都不行。我最后只好把那个数组改成全局的。</p>
+<p>工程题的测试是本地给你一个测试程序和 20 个测试数据，让你测试好再交，和前面的题不一样，只能交 3 次。结果出问题了：那个测试程序跑不起来。对着它的代码研究了足足二十分钟，发现它用的是 Linux 路径，和 Windows 路径相比多了个 <code>../</code>。</p>
+<p>改了路径之后它能跑了，然而只有二十多分。我改用 <code>set</code>，这下可以删除了，但还是一个样子，有些测试点是 0 分了。我应该确实写出了很多 UB，但可能也有别的问题。但这时候已经 16:50 了，我还有第四题的暴力没写，不可能再调了。把那三次提交机会用完，最后得了 17.5 分。</p>
+<p>有一件很有意思的事：吃完饭之后，考场里的人就陆陆续续提前交卷了。在 15:30，整个考场好像只剩 3 个人了。我交完工程题是 16:55，这时整个考场只剩我和我右边那个人。但我不能走，我现在有 317.5 分，最后 35 分钟最好能拿到第四题第一档的 25 分。</p>
+<p>这个输入格式好阴间，又要 <code>getline</code> 又要 <code>sscanf</code>，还要特判。既然要找对子、三张和顺子，那就给扑克牌按点数排序，然后 DFS 吧。在 17:10，我右边的人也走了。我写完代码已经是 17:20 了，交上去只有 20 分，第一个点错了。到 17:25，我才发现，题目规定，虽然以 A 为最大牌的算顺子，但 A2345 也算顺子。但排序把这个顺子拆散了，要改没有 20 分钟是写不完的。</p>
+<p>于是我离开了考场，得分 337.5&#x2F;600。</p>
+<p>离这里 2.2 公里有一家麦当劳，去那里吃饭吧。这里是郊区的常见景象——高压电塔和电线，破旧、零碎的房屋，以及公路上奔驰的汽车。而给人走的路都不好走。</p>
+<p>走了一段路，来到了一个公交车站，在公交车上往前坐了一站，然后下车找那家麦当劳。麦当劳在一座商场里，商场的建筑如城堡般美轮美奂，与外面的了无生气的景观放在一起，难免给人错愕之感。</p>
+<p>在群里听说工程题“随随便便就能 120 分”，难道真的是我的代码里有什么低级错误？如果我分配多一些时间给题面很吓人、我也毫无把握的工程题，会不会就上 400 分了？可能吧。不过比赛没有“如果”。</p>
+<p>麦当劳很好吃。——可是怎么有人在麦当劳的座位上用电脑写着论文啊？</p>
+<p>不过，我也得赶我的微积分作业了。</p>
+<h3 id="12-02"><a href="#12-02" class="headerlink" title="12.02"></a>12.02</h3><p>拼尽全力赶微积分作业，但由于早上还有生物课，最终还是没能赶上，迟交了两个小时。</p>
+<p>CSP 认证的报名显示“审核通过”，这下放心了。我一直在担心他们会因为我不是信息学院的而不给我通过审核。</p>
+<p>开始做英语翻译作业，以及英语翻译比赛的题目。</p>
+<h3 id="12-03"><a href="#12-03" class="headerlink" title="12.03"></a>12.03</h3><p>做完英语翻译作业。</p>
+<p>突然发现定向越野课的期末考试（直接拉我们去思明校区参加某个比赛作为考试）就在 CSP 认证那一天，还好是早上，不过又得规划交通方式了。</p>
+<h3 id="12-04"><a href="#12-04" class="headerlink" title="12.04"></a>12.04</h3><p>早上没有课，吃午饭前做完了英语翻译比赛。</p>
+<p>晚上还要抄到翻译纸上。</p>
+<h3 id="12-05"><a href="#12-05" class="headerlink" title="12.05"></a>12.05</h3><p>抄英译汉的最后两段，用扫描全能王扫描，在 14:40 提交到了比赛网站上。此时距离截止时间只有 20 分钟。</p>
+<h3 id="12-07"><a href="#12-07" class="headerlink" title="12.07"></a>12.07</h3><p>早上去思明校区踩点。思明的地形好复杂，希望明天定向越野不要迷路。顺便测试交通方式，比我想象中麻烦，明天得多花些车费了。</p>
+<p>14:30 才去到 XCPC 训练室，门还锁了，于是大家都知道我迟到了。做 ICPC 沈阳站的题目。题目太难了，到 18:00 只做出 2 题（J 和 D），与上上周桃园站的 8 题形成了鲜明对比。</p>
+<p>晚上在图书馆看到一本新书《唐人街：深具社会经济潜力的都市族裔聚居区》。其实那是一本 1992 年的旧书，由美国华人周敏所著，原标题为 Chinatown: The Socioeconomic Potential of an Urban Enclave，而这本 30 周年新译本由她的同为美国华人的丈夫郭南翻译。它的内容是对美国唐人街的研究，甚合我意，遂借走。</p>
+<h3 id="12-08-上午-插播：定向越野"><a href="#12-08-上午-插播：定向越野" class="headerlink" title="12.08 上午 | 插播：定向越野"></a>12.08 上午 | 插播：定向越野</h3><p>06:15 起床。吃早餐，坐学校给提供的大巴去思明参加定向越野比赛。我跑第一棒。</p>
+<p>09:17 鸣枪开跑。前几个点看哪里人多就往哪里跑。但我一开始嫌大家排着队打卡太耽误时间，就跳过了一个点，去跟已经在找其他点的人。前 9 个点都很顺利，但我发现我找不回我跳过的那个点了。然后看地图，转了好久，才大概确定那个点在哪里。回到运动场已经是 09:59 了，拖累了队友，很惭愧。</p>
+<p>原来说 10:57 关门的，后来主办方发现这么搞的话有成绩的基本都有奖了，换言之没奖的基本都没成绩了，就延长了 20 分钟。</p>
+<p>11:10 出思明校区校门，打车去海边的小东山地铁站。希望这时候他们已经跑完了，我想。</p>
+<p>坐上跨海的 3 号线之后，第三棒的队友在 QQ 上跟我说我们差一点就没成绩了。想想都后怕。</p>
+<h3 id="12-08-下午-CSP-认证"><a href="#12-08-下午-CSP-认证" class="headerlink" title="12.08 下午 | CSP 认证"></a>12.08 下午 | CSP 认证</h3><p>12:05 左右从塘边站出来。去旁边的村里吃了碗汤米粉。那家店给它取的名字非常简朴，就叫“汤米粉”，拿到之后才知道里面是个大杂烩，肉菜非常丰富，而且只要 15 块，很划算。</p>
+<p>12:45 从另一边出村，叫了辆出租车，直奔考场旁边的西门。13:11 下车。</p>
+<p>到 13:30，考场的门还没开。监考老师迟到了！等到 13:47，有人输对密码打开了门，但监考老师还是没来。然后我发现我的座位的显示器和电脑没连上，搞了半天都搞不好，只好换一个座位。</p>
+<p>到 14:05，监考老师还是没来！但本校大佬 ZPC 来了，把考试的网址告诉了我们，然后跟我们说不要上其他网站，否则可能会被视为作弊。登上考试网站之后，发现考试被推迟到 14:30 开始，推迟了整整一小时。</p>
+<p>这时候我发现一个严重的问题：我在电脑上找不到任何 C++ 编译器！然后我又发现那个网站上不去了。我举手跟 ZPC 说网站上不去了，ZPC 也没有办法，打电话叫监考老师过来。他过来之后叫我再换一台电脑。</p>
+<p>换了电脑，比赛快要开始了。我又开始寻找 C++ 编译器。这时候我下载了一个 MinGW64。14:30 题目发了下来，第一题一看就是大水题。然后我发现那个 MinGW64 好像是假的，但监考老师在这里，我不敢再访问任何不属于比赛系统的网页了。经过一番搜索，我发现某个角落（好像是 Matlab 软件里面吧）有个 MinGW64，里面有 g++。时间已经过去很久了，我急着拿分，看了第一题的大概意思，是一个东西在网格上按照要求移动，就写了个程序，直接拷到编译器的文件夹里，试着编译。结果一件神奇的事发生了：那个编译器可以判断我的程序是否能通过编译，如果不通过也会正常给出错误信息，但它不愿意给我真正编译出 .exe 文件，而是在返回的信息的末尾吐出一堆奇怪的错误信息！换了好几种编译的方法，无果。先直接把这个程序交上去吧。交上去发现 50 分，果然我的注意力都在编译器上了，根本没认真读题，题目说了“超出边界就不动”啊。改完就 100 分了。问题来了，接下来怎么办？用 Python 写吧，报名的时候我编程语言选的是“全部”，我已经不是只会一种编程语言的人了。</p>
+<p>对了，怎么连草稿纸都没发？不过允许带纸质资料，我也确实带了，于是我的纸质资料的空白处就成了草稿纸。</p>
+<p>这时大概是 15:10。第二题大意是一个人沿着一条链从头走到尾，在每条边上要消耗能量，在每个点上会补充能量，给你每条边和（除起点外的）每个点对应的消耗或补充的能量值，问在起点处至少要有多少能量才能让能量值在整个过程都不会小于零。把那个形如 $w+\min(\dots)\ge0$ 的式子（其中 $w$ 是在起点处的能量值）写了出来，于是只需要 $w\ge-\min(\dots)$，那 $w$ 的最小值就是不等式的右边。直接算就好了。你别说，用 Python 写程序还挺爽的。很快就过了这道题。这时大概是 15:30。</p>
+<p>看第三题，发现是题面超长的大模拟，看着就不想做，先看别的题吧。第四题叫“跳房子”，题面很短，输入是两列数。我眼前一亮，估计是 DP。第五题感觉很神秘。</p>
+<p>读第四题，它说一个人沿着一列格子跳，第 $i$ 个格子规定可以往前跳至多 $k_i$ 格，但每次落地后（假设落在第 $j$ 格）会自动传送到第 $(j-a_j)$ 格，问从第 $1$ 格跳到第 $n$ 格至少要跳多少次。写了个 DP 状态转移方程，照这个方程算是 $\Theta(n^2)$ 的，能得 30 分。但是这样做没有优化空间，于是我改了一下 DP 值 $f[i]$ 的定义，把“传送后停在 $i$ 号格”改成了“在 $i$ 号格落地”，换言之，新的 $f[i]$ 对应原来的 $f[i-a_i]$，这样由 $f[i]$ 转移到的位置就是连续的了。但写的时候我又犹豫了，既然会往回传送，真的没有后效性吗。这不会是我不会的“线段树优化建图”吧。想了一下，由于没有限制最少往前跳多少格，同样的步数之内，远的格子能碰到（指落地），那近的格子就更能碰到；换言之，远的格子对应的 $f$ 值不小于近的格子对应的 $f$ 值。所以，让 $i$ 从 $1$ 遍历到 $n$，在 $i&#x3D;i_0$ 时用 $f[i]$ 更新在 $i_0$ 号格子被传送回去再跳可能的落地点对应的 $f$，即使在 $i_0$ 号格以前的格子落地，也不会让那个格子的 $f$ 变得更小——而这又保证了后面算出的 $f$ 是真实的，于是就归纳地证明了可以这样 DP。（而按照原来的 DP 值定义，这个结论就不成立了，也就是我一开始想出的 DP 其实是错的……）</p>
+<p>$\Theta(n^2)$ 的代码很好写，交上去就过了。要优化到 $\Theta(n\log n)$，就需要一个能在 $O(\log n)$ 时间内做将一个区间 $[l,r]$ 内的所有数都变成它和 $v$ 的 min 的修改 $\text{UPDATE}(l,r,v)$ 和对位置 $x$ 的查询 $\text{QUERY(x)}$ 的数据结构。那么可以用线段树——等等，我会写做这种修改的线段树吗？哦，修改的时候给那 $O(\log n)$ 个区间打上标记，需要叠加标记的时候就取那些标记 min，查询的时候扫一遍那个点头上的所有标记就好了。</p>
+<p>于是写了一个线段树，但是常数巨大，因为每个节点是用 tuple 存的，而众所周知 Python 的 tuple 只能整体赋值。为了优化常数，我把节点里的 l, r 去掉，而且不再用 tuple 存了。这时候我突然发现我在下传懒标记之后没有把它取消掉，虽然这在这道题里没有错，但这么一来那个懒标记为 $+∞$ 就跳过的优化就失效了，于是我补上了取消懒标记的代码。但是我发现这个代码还是会超时！原来 Python 的 $n&#x3D;1\times10^5$ 的线段树跑不进 0.5 s？我没有别的办法，只好一字一句把 Python 翻译成 C++。一开始交上去发现是 0 分，检查了一下发现有一句抄错了，改完就过了。</p>
+<p>（考完我才发现，我在每个节点多存了“区间的最小值”的信息，明明只有单点查询啊，只存懒标记不就好了吗……把这个数组去掉说不定 Python 也能过……）</p>
+<p>这时已经 18:00 了。我想冲一冲第三题，打个暴力分也好，但第三题的题意实在太复杂了，我到了 18:20 还差好多才能写出最朴素的做法。判断出自己不可能在剩下的 10 分钟内写完剩下的部分之后，我转而去看第五题，但照样写不完。最后两分钟试着骗了骗第三题的分，无果。然后就结束了，得分 300&#x2F;500。</p>
+<p>感觉不太满意啊，剩下两题的部分分没拿到，明年春天再来吧。还有，我们学校的组织真的一团糟，从推迟考试（是忘记今天有考试了吗），到不发草稿纸，从电脑的硬件问题，到电脑里残缺的编程环境，到处都是问题。以后得做好心理准备了。</p>
+<p>晚上去肯德基吃饭。回去还有微积分作业，还有实验报告，还有乐跑。</p>
+<h3 id="12-09"><a href="#12-09" class="headerlink" title="12.09"></a>12.09</h3><p>单周，早上没有生物课。</p>
+<p>乐跑。然后去图书馆赶微积分作业和实验报告。分部积分有些题目得连着写十个等号，好壮观啊。</p>
+<p>为了补作业，我中午连饭都没吃，下午微积分课课间把前一天买的三明治吃了。但微积分作业还是迟交了一个小时。</p>
+<p>然后就是实验报告，我直到晚上上课的时候还在补。晚饭也没有正常吃，是快上课的时候靠几根香肠解决的。下课后我跑着去打印实验报告，交到办公室的时候离 22:00 的截止时间只有 5 分钟。</p>
+<p>这个忙碌的周末总算结束了。</p>
+<h3 id="12-12"><a href="#12-12" class="headerlink" title="12.12"></a>12.12</h3><p>晚上 CSP 出成绩单了。这次的平均分是 164，较迄今为止所有场次的平均分高 20 分，看来是偏简单的。300 分能排到前 6.34%，希望下一次能更好。</p>
+<p>CACC 榜怎么还不出啊？</p>
+<hr>
+<p>就以此作为这个博客的第一篇文章吧。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E8%AE%B0/" rel="tag"># 游记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/12/10/mathjax/" rel="prev" title="测试 MathJax 渲染">
+      <i class="fa fa-chevron-left"></i> 测试 MathJax 渲染
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2024/12/15/definition-properties-of-integrals/" rel="next" title="定积分的定义和性质">
+      定积分的定义和性质 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#11-30"><span class="nav-number">1.</span> <span class="nav-text">11.30</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-01-CACC"><span class="nav-number">2.</span> <span class="nav-text">12.01 | CACC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-02"><span class="nav-number">3.</span> <span class="nav-text">12.02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-03"><span class="nav-number">4.</span> <span class="nav-text">12.03</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-04"><span class="nav-number">5.</span> <span class="nav-text">12.04</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-05"><span class="nav-number">6.</span> <span class="nav-text">12.05</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-07"><span class="nav-number">7.</span> <span class="nav-text">12.07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-08-%E4%B8%8A%E5%8D%88-%E6%8F%92%E6%92%AD%EF%BC%9A%E5%AE%9A%E5%90%91%E8%B6%8A%E9%87%8E"><span class="nav-number">8.</span> <span class="nav-text">12.08 上午 | 插播：定向越野</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-08-%E4%B8%8B%E5%8D%88-CSP-%E8%AE%A4%E8%AF%81"><span class="nav-number">9.</span> <span class="nav-text">12.08 下午 | CSP 认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-09"><span class="nav-number">10.</span> <span class="nav-text">12.09</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-12"><span class="nav-number">11.</span> <span class="nav-text">12.12</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">silent-sure</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/silent-sure" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;silent-sure" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:storyteller@stu.xmu.edu.cn" title="E-Mail → mailto:storyteller@stu.xmu.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">silent-sure</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
